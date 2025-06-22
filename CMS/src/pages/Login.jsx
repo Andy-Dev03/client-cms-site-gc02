@@ -12,7 +12,7 @@ const Login = () => {
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
-      const { data } = await axios.post("https://www.andylie.web.id/login", {
+      const { data } = await axios.post("https://andylie.web.id/login", {
         email,
         password,
       });

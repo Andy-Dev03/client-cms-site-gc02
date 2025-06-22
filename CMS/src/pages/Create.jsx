@@ -9,7 +9,7 @@ const Create = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://www.andylie.web.id/cuisines",
+        "https://andylie.web.id/cuisines",
         form,
         {
           headers: {
