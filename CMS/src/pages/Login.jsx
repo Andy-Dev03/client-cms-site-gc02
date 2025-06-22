@@ -139,7 +139,7 @@ const Login = () => {
             </button>
 
             <a
-              href="https://client-public-site-gc02.vercel.app/"
+              href="https://public.andylie.web.id"
               className="flex justify-center underline pt-4 hover:text-red-500 duration-200"
             >
               <span>Back to home</span>

@@ -52,7 +52,7 @@ const Sidebar = ({ handleLogout }) => {
       </nav>
 
       <a
-        href="https://client-public-site-gc02.vercel.app/"
+        href="https://public.andylie.web.id"
         onClick={handleLogout}
         className="mt-auto flex items-center px-3 py-3 rounded-lg text-red-400 hover:text-white hover:bg-red-600 transition-colors duration-200"
       >
