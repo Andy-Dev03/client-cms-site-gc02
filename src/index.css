@@ -1,8 +1,0 @@
-@import "tailwindcss";
-
-.custom-toast .toast-close {
-  font-size: 10px;
-  top: 5px;
-  right: 8px;
-  position: absolute;
-}
