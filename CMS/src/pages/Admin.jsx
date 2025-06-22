@@ -152,7 +152,7 @@ const Admin = () => {
         <div className="mb-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Entity List</h2>
           <p className="font-semibold text-gray-600">
-            All the entities of{" "}
+            All the data of{" "}
             {categoriesOrCuisines === "cuisines" ? "Cuisines" : "Categories"}
           </p>
         </div>
