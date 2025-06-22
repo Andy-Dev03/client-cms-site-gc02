@@ -93,7 +93,7 @@ const Admin = () => {
   const deleteButton = async (id) => {
     try {
       const { data } = await axios.delete(
-        `https://www.andylie.web.id//cuisines/${id}`,
+        `https://www.andylie.web.id/cuisines/${id}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.accessToken}`,
