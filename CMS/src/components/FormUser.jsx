@@ -1,16 +1,5 @@
-import { useState } from "react";
-
 import Button from "./Button";
-const FormUser = ({ postNewUser }) => {
-  // Post new User
-  const [formAddUser, setFormAddUser] = useState({
-    username: "",
-    phoneNumber: "",
-    email: "",
-    password: "",
-    address: "",
-  });
-
+const FormUser = ({ postNewUser, formAddUser, setFormAddUser }) => {
   const btnChangeUser = (event) => {
     const { name, value } = event.target;
     setFormAddUser({

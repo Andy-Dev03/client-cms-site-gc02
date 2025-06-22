@@ -3,6 +3,14 @@ import Toastify from "toastify-js";
 import axios from "axios";
 const Add = () => {
   // Post new User
+  const [formAddUser, setFormAddUser] = useState({
+    username: "",
+    phoneNumber: "",
+    email: "",
+    password: "",
+    address: "",
+  });
+
   const postNewUser = async (event, formAddUser) => {
     event.preventDefault();
     try {
@@ -32,6 +40,14 @@ const Add = () => {
           paddingRight: "2.5rem",
         },
       }).showToast();
+
+      setFormAddUser({
+        username: "",
+        phoneNumber: "",
+        email: "",
+        password: "",
+        address: "",
+      });
     } catch (error) {
       const errorData = error.response?.data?.error?.message;
       let errorText;
@@ -74,7 +90,11 @@ const Add = () => {
               Register a new staff to the Database
             </p>
           </div>
-          <FormUser postNewUser={postNewUser} />
+          <FormUser
+            postNewUser={postNewUser}
+            formAddUser={formAddUser}
+            setFormAddUser={setFormAddUser}
+          />
         </div>
       </div>
     </>
