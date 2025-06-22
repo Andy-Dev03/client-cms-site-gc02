@@ -1,12 +1,10 @@
 import { Outlet } from "react-router";
 import Sidebar from "../components/Sidebar";
-import { useNavigate, Link } from "react-router";
+import { Link } from "react-router";
 
 const RootLayout = () => {
-  const navigate = useNavigate();
   const handleLogout = () => {
     localStorage.clear();
-    navigate("/login");
   };
   return (
     <>
@@ -14,6 +12,7 @@ const RootLayout = () => {
       <div className="md:hidden bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white p-4 flex justify-between items-center">
         <h1 className="font-bold text-xl">CMS Admin</h1>
         <a
+          href="https://client-public-site-gc02.vercel.app/"
           onClick={handleLogout}
           className="flex items-center px-2 py-3 rounded-lg text-red-400 hover:text-white hover:bg-red-600 transition-colors duration-200 text-sm"
         >
