@@ -38,6 +38,8 @@ const Login = () => {
         },
       }).showToast();
     } catch (error) {
+      console.log(error);
+
       Toastify({
         text: error.response.data.error.message,
         duration: 3000,

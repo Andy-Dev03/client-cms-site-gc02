@@ -6,6 +6,7 @@ const RootLayout = () => {
   const handleLogout = () => {
     localStorage.clear();
   };
+
   return (
     <>
       {/* When under md view */}
