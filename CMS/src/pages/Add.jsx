@@ -17,7 +17,7 @@ const Add = () => {
     event.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://andylie.web.id/add-user",
+        "https://www.andylie.web.id/add-user",
         formAddUser,
         {
           headers: { Authorization: `Bearer ${localStorage.accessToken}` },

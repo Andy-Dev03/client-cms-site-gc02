@@ -44,7 +44,7 @@ const Admin = () => {
   const fetchCuisines = async () => {
     try {
       const { data } = await axios.get(
-        `https://andylie.web.id/cuisines?page=${currentPage}`,
+        `https://www.andylie.web.id/cuisines?page=${currentPage}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.accessToken}`,
@@ -73,7 +73,7 @@ const Admin = () => {
   const fetchCategories = async () => {
     try {
       const { data } = await axios.get(
-        `https://andylie.web.id/categories?page=${categoriesPage}`,
+        `https://www.andylie.web.id/categories?page=${categoriesPage}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.accessToken}`,
@@ -93,7 +93,7 @@ const Admin = () => {
   const deleteButton = async (id) => {
     try {
       const { data } = await axios.delete(
-        `https://andylie.web.id/cuisines/${id}`,
+        `https://www.andylie.web.id/cuisines/${id}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.accessToken}`,

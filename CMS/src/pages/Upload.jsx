@@ -14,11 +14,14 @@ const Upload = () => {
 
   // Get detail
   const uploadDetail = async () => {
-    const { data } = await axios.get(`https://andylie.web.id/cuisines/${id}`, {
-      headers: {
-        Authorization: `Bearer ${localStorage.accessToken}`,
-      },
-    });
+    const { data } = await axios.get(
+      `https://www.andylie.web.id/cuisines/${id}`,
+      {
+        headers: {
+          Authorization: `Bearer ${localStorage.accessToken}`,
+        },
+      }
+    );
 
     setUploadDetail(data.data);
   };
@@ -34,7 +37,7 @@ const Upload = () => {
       formData.append("imgUrl", imageFile);
 
       const { data } = await axios.patch(
-        `https://andylie.web.id/cuisines/${id}`,
+        `https://www.andylie.web.id/cuisines/${id}`,
         formData,
         {
           headers: {

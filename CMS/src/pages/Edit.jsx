@@ -13,7 +13,7 @@ const Edit = () => {
   const fetchDetail = async () => {
     try {
       const { data } = await axios.get(
-        `https://andylie.web.id/cuisines/${id}`,
+        `https://www.andylie.web.id/cuisines/${id}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.accessToken}`,
@@ -47,7 +47,7 @@ const Edit = () => {
     e.preventDefault();
     try {
       const { data } = await axios.put(
-        `https://andylie.web.id/cuisines/${id}`,
+        `https://www.andylie.web.id/cuisines/${id}`,
         form,
         {
           headers: {
